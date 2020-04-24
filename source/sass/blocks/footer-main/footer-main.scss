@@ -1,0 +1,16 @@
+.footer-main {
+  background-color: #575757;
+  margin-top: -28px;
+}
+
+.footer-main__title {
+  @include playfairdisplay;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 33px;
+  color: #ffffff;
+  padding-top: 26px;
+}

@@ -1,0 +1,10 @@
+.header-main__title {
+  @include playfairdisplay;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 46px;
+}

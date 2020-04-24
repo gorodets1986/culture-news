@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости культуры</title>
+    <link rel="stylesheet" href="source/sass/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="header-main">
+            <div class="container">
+                <p class="header-main__title">{{ titleSite }}</p>
+                <nav class="nav-main">
+                    <navigations-header :navigations="navigations"></navigations-header>
+                </nav>
+            </div>
+            <section class="new">
+                <h2 class="visually-hidden">Новое</h2>
+                <div class="container">
+                    <a href="#" class="new__link">Новое</a>
+                    <div class="new__description">
+                        <p class="new__title">Подводный отель</p>
+                        <p class="new__text">Как известно, Дубай – город контрастов. Самые революционные<br>
+                            и фантастические мечты архитекторов способен
+                            воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="main-reviews">
+            <div class="container">
+                <h1 class="main-reviews__heading">Обзоры</h1>
+                <reviews :reviews="reviews"></reviews>
+            </div>
+            <article class="tickets">
+                <div class="tickets__wrapper">
+                    <h2 class="tickets__heading">{{ ticketsHeading }}</h2>
+                    <tickets :ticket="tickets"></tickets>
+                    <a href="#" class="tickets__watch">{{ ticketsWatch }}</a>
+                </div>
+            </article>
+        </main>
+        <footer class="footer-main">
+            <div class="container">
+                <p class="footer-main__title">{{ titleSite }}</p>
+                <nav class="nav-main nav-main--footer">
+                    <navigations-footer :navigations="navigations"></navigations-footer>
+                </nav>
+                <section class="contacts">
+                    <contacts :contact="contacts"></contacts>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+    <script src="source/js/app.js"></script>
+</body>
+</html>

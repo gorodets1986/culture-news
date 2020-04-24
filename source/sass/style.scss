@@ -1,0 +1,29 @@
+@import "fonts/fonts",
+  "vendors/normalize",
+  "mixins/mixins",
+  "abstracts/variables",
+  "blocks/contacts/contacts",
+  "blocks/footer-main/footer-main",
+  "blocks/header-main/header-main",
+  "blocks/main-reviews/main-reviews",
+  "blocks/nav-main/nav-main",
+  "blocks/new/new",
+  "blocks/tickets/tickets";
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1171px;
+}

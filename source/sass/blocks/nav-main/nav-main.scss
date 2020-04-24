@@ -1,0 +1,30 @@
+.nav-main {
+  margin-bottom: 47px;
+}
+
+.nav-main__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-main__link {
+  @include roboto;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.nav-main--footer {
+  padding-bottom: 29px;
+  border-bottom: 1px solid rgba(#ffffff, 0.4);
+  margin-bottom: 26px;
+}
+
+.nav-main__link--footer {
+  color: #ffffff;
+}
